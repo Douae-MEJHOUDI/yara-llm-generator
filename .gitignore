@@ -1,0 +1,40 @@
+# Python 
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env variables
+.env
+
+# Data files
+data/malware_samples/*.exe
+data/malware_samples/*.dll
+data/benign_samples/*
+
+# Generated rules
+data/generated_rules/*.yar
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker
+*.dockerignore
+docker-compose.override.yml

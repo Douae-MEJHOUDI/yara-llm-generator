@@ -1,0 +1,15 @@
+# Core dependencies for YARA LLM Generator
+# Python version: 3.8+
+
+# Static analysis tools
+pefile>=2023.2.7
+lief>=0.13.0
+
+# YARA support
+yara-python>=4.3.1
+
+# LLM integration (Claude)
+anthropic>=0.18.0
+
+# Utilities
+python-dotenv>=1.0.0

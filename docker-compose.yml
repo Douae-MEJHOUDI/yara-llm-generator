@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  yara-generator:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: yara-llm-generator
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - MODEL_NAME=${MODEL_NAME:-claude-sonnet-4-5-20250929}
+    volumes:
+      # Mount data directories to persist results
+      - ./data:/app/data
+      # Mount source code for development (optional, remove in production)
+      - ./src:/app/src
+    stdin_open: true
+    tty: true
+    command: python -m src.main
+
+  # Optional: Add a validation service for testing rules
+  # yara-validator:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: yara-validator
+  #   volumes:
+  #     - ./data:/app/data
+  #   command: python -m src.validators.validator
+
+networks:
+  default:
+    name: yara-network
