@@ -29,7 +29,7 @@ RUN mkdir -p data/malware_samples data/benign_samples data/generated_rules
 ENV PYTHONUNBUFFERED=1
 ENV PYTHONPATH=/app
 
-# Expose port if needed (for future API/web interface)
+# Expose port if needed (for future API/web interface) (Don't think we will get this far tho LOL)
 EXPOSE 8000
 
 # Default command (will be overridden by docker-compose or start.sh)
