@@ -1,0 +1,147 @@
+{
+  "sample_hash": "0a0a2c09452cbe5c5c28a5eb59a97cc82cd8ccb26461c15231f0c88670db67e8",
+  "suspicious_registry": [
+    {
+      "key": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoPropertiesMyComputer",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoPropertiesRecycleBin",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoControlPanel",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoSetFolders",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoInternetIcon",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoCommonGroups",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\DontShowSuperHidden",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoWebView",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\ClassicShell",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\SeparateProcess",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoNetCrawling",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoSimpleStartMenu",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\AllowFileCLSIDJunctions",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\ForceCopyACLWithFile",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    },
+    {
+      "key": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\Explorer\\NoEncryptOnMove",
+      "pattern": "\\CurrentVersion\\Policies\\Explorer",
+      "category": "policy_modification"
+    }
+  ],
+  "suspicious_api_calls": {
+    "detailed": [],
+    "summary": []
+  },
+  "network_activity": {
+    "domains": [],
+    "ips": [],
+    "urls": [],
+    "suspicious_ports": []
+  },
+  "file_operations": [
+    {
+      "path": "C:\\Users\\comp\\AppData\\Local\\Temp\\0A0A2C09452CBE5C5C28.exe",
+      "pattern": "\\AppData\\Local\\Temp"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Local\\Temp",
+      "pattern": "\\AppData\\Local\\Temp"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\",
+      "pattern": "\\AppData\\Roaming"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\slideshow.ini",
+      "pattern": "\\AppData\\Roaming"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Network\\Connections\\Pbk\\_hiddenPbk\\",
+      "pattern": "\\AppData\\Roaming"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Network\\Connections\\Pbk\\_hiddenPbk\\rasphone.pbk",
+      "pattern": "\\AppData\\Roaming"
+    },
+    {
+      "path": "C:\\ProgramData\\Microsoft\\Network\\Connections\\Pbk\\rasphone.pbk",
+      "pattern": "\\ProgramData"
+    },
+    {
+      "path": "C:\\ProgramData\\Microsoft\\Network\\Connections\\Pbk\\*.pbk",
+      "pattern": "\\ProgramData"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Network\\Connections\\Pbk\\rasphone.pbk",
+      "pattern": "\\AppData\\Roaming"
+    },
+    {
+      "path": "C:\\Users\\comp\\AppData\\Roaming\\Microsoft\\Network\\Connections\\Pbk\\*.pbk",
+      "pattern": "\\AppData\\Roaming"
+    }
+  ],
+  "process_behavior": {
+    "created_processes": [],
+    "injected_processes": []
+  },
+  "behavior_summary": {}
+}
